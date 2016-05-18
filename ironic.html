@@ -43,9 +43,11 @@
 				<section data-background-transition="zoom">
 					<h1>Ironic</h1>
 					<h3>OpenStack BareMetal Project</h3>
+					<p>18 May 2016 </p>
 					<p>
-						<small>Created by <a href="http://www.linkedin.com/in/sirajudheen">Sirajudheen Moahmed Ali</a> / <a href="http://twitter.com/buzzmesam">@buzzmesam</a></small>
+						<small>By <a href="http://www.linkedin.com/in/sirajudheen">Sirajudheen Moahmed Ali</a> / <a href="http://twitter.com/buzzmesam">@buzzmesam</a></small>
 					</p>
+
 				</section>
 
 				<section data-background-transition="zoom">
@@ -62,15 +64,58 @@
 
 				<section data-background-transition="zoom">
 					<h2>Introduction to Ironic</h2>
+					<p>What is it ? – Baremetal Provisioning Project </p>
+						<p>(forked from nova baremetal driver)</p>
+					<p>Time and Cost Savings </p>
+					<p>Single Point to manage both Physical / Virtual Provisions </p>
 				</section>
 				<section data-background-transition="zoom">
 					<h2>Use Cases</h2>
+					<p align=left>Compliance / Security Requirements – eg., SOX</p>
+					<p align=left><small>Computing tasks that require access to hardware devices which can’t be virtualized</small></p>
+					<p align=left>Higher Computing Power – eg., Super Computing</p>
+					<p align=left>Database / BigData hosting</p>
+					<p align=left>Video Rendering Apps with Specific GPU </p>
+					<p align=left>Cloud Scale Out</p>
+					<p align=left>OpenStack to provision another OpenStack (TripleO)</p>
+					<p align=left>Monsoon ??</p>
 				</section>
 				<section data-background-transition="zoom">
-					<h2>Technologies under the hood</h2>
+					<h4>Traditional way of setting up Physical hardware</h4>
+					<p>Rack & Stack </p>
+					<p>Remote Interface IP Allocation</p>
+					<p>PXE Boot (eg.,UDA) – ISO Mount – Install OS </p>
+					<p>Run Scripts to configure (eg., Join to domain etc.,)</p>
 				</section>
 				<section data-background-transition="zoom">
-					<h2>How does it work ?</h2>
+					<h2 align=left>Technologies under the hood</h2>
+					<p align=left>PXE (<u>P</u>re-boot e<u>X</u>ecution <u>E</u>nvironment)</p>
+					<p align=left>DHCP (Dynamic Host Control Protocol)</p>
+					<p align=left>NBP (Network Bootstrap Program)</p>
+					<p align=left>TFTP (Trivial File Transfer Protocol)</p>
+					<p align=left>IPMI (Intelligent Platform Management Interface)</p>
+					<p align=left>iSCSI (Internet Small Computer System Interface) for dd</p>
+				</section>
+				<section>
+					<h2>Ironic Architecture</h2>
+					<img width="700" height="550" data-src="ironic/assets/Ironic_Architecture.jpg">
+				</section>
+				<section>
+					<h2>How does it work ? </h2>
+				<img width="700" height="550" data-src="ironic/assets/how_does_ironic_work.jpg">
+				</section>
+				<section>
+					<h2>Ironic Commands </h2>
+					<p> node-create</p>
+					<p> node-delete</p>
+					<p> node-get-console</p>
+					<p> node-list</p>
+					<p> node-set-console-mode</p>
+					<p> node-set-power-state</p>
+					<p> node-set-provision-state</p>
+					<p> node-show</p>
+					<p> node-update</p>
+					<p> node-validate</p>
 				</section>
 				<section data-background-transition="zoom">
 					<h2>Q&A</h2>
@@ -78,7 +123,7 @@
 				<section data-background-transition="zoom">
 					<h2>Thank You</h2>
 				</section>
-				
+
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
